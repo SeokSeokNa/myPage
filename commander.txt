@@ -1,0 +1,39 @@
+git저장소는 Working_Directory , Staging_Area , Repository 로 이루어져 있으며 
+     *Working_Directory  : 내가 현재 작업하고 있는공간 자체
+     *Staging_Area         : 버전이될 후보들의 공간
+     *Repository            : 버전이 된 파일들의 공간
+==============================================================================================================================
+==============================================================================================================================
+==============================================================================================================================
+버전관리 사용하겠다!(깃 사용하겠다)
+  - git init
+
+상태확인
+  - git status
+
+stage area 에 올리겠다(버전이 될 후보들이 모이는 공간에 올리겠다)
+  - git add 파일이름
+
+stage area 에 현재 디렉터리에 있는 파일을 모두 Staging Area에 올리겠다.
+  - git add .
+
+버전 등록을 완료하겠다. (Repository 저장소에 올라감)
+  - git commit -m 커밋메세지
+  - git commit  후 콘솔창에 열리는 페이지에 직접작성 하는 방법도 있음
+
+stage area 등록 + 버전등록
+  - git commit -am 커밋메세지
+  * 이 명령어는 한번이라도 커밋한 파일에 대해서만 가능함!!!!!(주의)
+
+깃헙 원격 저장소에 푸시하는 방법
+ -git remote add origin https://github.com/SeokSeokNa/myPage.git
+  git push -u origin main
+
+깃헙 원격 저장소에 한번 푸시 후에는 변경사항이 있을경우
+  - git push 명령어만 치면 된다
+
+이전 commit으로 되돌리기(reset)
+  - git reset --hard HEAD^     (workingDirectory , stagingArea , Repository 모두 한단계 전으로 되돌린다)
+  - git reset --mixed HEAD^   (stagingArea , Repository 만 한단계 전으로 되돌린다)
+  - git reset --soft HEAD^      (Repository 만 한단계 전으로 되돌린다)
+  - "^" 개수에 따라  하나면 한단계전  두개면 두 단계전으로 되돌리며 개수는 커밋한 만큼 가능 ...
