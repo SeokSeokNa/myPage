@@ -30,7 +30,7 @@ stage area 등록 + 버전등록
 
 깃헙 원격 저장소에 푸시하는 방법
  -git remote add origin https://github.com/SeokSeokNa/myPage.git
-  git branch -m main (현재 브랜치 이름을  강제로  main 으로 변경)
+  git branch -m main (현재 브랜치 이름을  강제로  main 으로 변경)   , (main이라는 이름의 새로운 브랜치로 덮어써서 작업한다는 뜻)
   git push -u origin main
 
 깃헙 원격 저장소에 한번 푸시 후에는 변경사항이 있을경우
