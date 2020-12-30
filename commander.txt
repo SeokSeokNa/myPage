@@ -112,4 +112,6 @@ commit 되돌리기
   - git revert 되돌아가고 싶은 commit hash
     ex)git revert de6d5c1148981e15617999c7ecaa6ec2ea21ff29
     부가설명 git revert -n 옵션 사용시 reset 과 같이 commit이 삭제됨!!!!
+    
+    바꾸기 테스트
 
