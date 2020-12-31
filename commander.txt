@@ -17,17 +17,17 @@ git저장소는 Working_Directory , Staging_Area , Repository 로 이루어져 �
 상태확인
   - git status
 
-stage area 에 올리겠다(버전이 될 후보들이 모이는 공간에 올리겠다)
+Staging area 에 올리겠다(버전이 될 후보들이 모이는 공간에 올리겠다)
   - git add 파일이름
 
-stage area 에 현재 디렉터리에 있는 파일을 모두 Staging Area에 올리겠다.
+Staging area 에 현재 디렉터리에 있는 파일을 모두 Staging Area에 올리겠다.
   - git add .
 
 버전 등록을 완료하겠다. (Repository 저장소에 올라감)
   - git commit -m "커밋메세지"
   - git commit  후 콘솔창에 열리는 페이지에 직접작성 하는 방법도 있음
 
-stage area 등록 + 버전등록
+Staging area 등록 + 버전등록
   - git commit -am 커밋메세지
   * 이 명령어는 한번이라도 커밋한 파일에 대해서만 가능함!!!!!(주의)
 
